@@ -11,7 +11,7 @@ const count = ref(0)
 <template>
   <h1>{{ msg }}</h1>
 
-  <p>
+  <p class="text-xl font-medium text-red-800">
     Recommended IDE setup:
     <a href="https://code.visualstudio.com/" target="_blank">VS Code</a>
     +
