@@ -1,12 +1,17 @@
 <script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
+import LayersList from './components/LayersList.vue'
+import RenderView from './components/RenderView.vue'
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+  <div class="flex h-screen w-full">
+    <div class="bg-slate-700 w-96 h-full overflow-scroll">
+      <LayersList />
+    </div>
+    <div class="flex grow justify-center items-center overflow-scroll">
+      <RenderView />
+    </div>
+  </div>
 </template>
 
 <style>
@@ -14,8 +19,5 @@ import HelloWorld from './components/HelloWorld.vue'
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
