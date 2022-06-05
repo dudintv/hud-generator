@@ -1,17 +1,14 @@
 <script setup>
-// import { ref } from 'vue'
+import { storeToRefs } from 'pinia'
+import { useStore } from '@/store'
 
-// defineProps({
-//   msg: String
-// })
-
-// const count = ref(0)
-const layers = [];
+const store = useStore()
+const { layers } = storeToRefs(store)
 </script>
 
 <template>
   <div class="flex flex-col">
-    <div v-for="layer in layers" :key="layer.id"></div>
+    <div v-for="layer in layers" :key="layer.id">{{ layer }}</div>
   </div>
 </template>
 
