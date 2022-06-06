@@ -1,6 +1,6 @@
 <script setup>
-import LayersList from './components/LayersList.vue'
-import RenderView from './components/RenderView.vue'
+import LayersList from './components/LayersList.vue';
+import RenderView from './components/RenderView.vue';
 </script>
 
 <template>
