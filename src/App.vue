@@ -8,7 +8,7 @@ import RenderView from './components/RenderView.vue';
     <div class="bg-slate-700 w-96 h-full overflow-scroll">
       <LayersList />
     </div>
-    <div class="flex grow justify-center items-center overflow-scroll">
+    <div class="flex grow justify-center items-center overflow-scroll bg-gray-900">
       <RenderView />
     </div>
   </div>

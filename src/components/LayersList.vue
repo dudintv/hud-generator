@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { storeToRefs } from 'pinia';
 import { useStore } from '@/store';
+import DropdownMenu from '@/elements/DropdownMenu.vue';
 
 const store = useStore();
 const { layers, presets } = storeToRefs(store);
@@ -15,9 +16,9 @@ const { layers, presets } = storeToRefs(store);
     >
       <!-- header -->
       <div class="px-2 mb-2 text-lg flex justify-between">
-        <div>
+        <div class="flex">
           <span class="mr-2">{{ layer.name }}</span>
-          <span v-if="presets[layer.type]">preset \/</span>
+          <DropdownMenu title="Preset" :items="['1111', '2222', '3333']" v-if="presets[layer.type]" />
         </div>
         <div class="actions">
           <button class="ml-2">copy</button>
